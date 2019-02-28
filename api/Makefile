@@ -6,6 +6,9 @@ build:
 	fi
 	go build -o ./api;
 
+test:
+	go test ./...
+
 clean:
 	rm -rf ./api
 
