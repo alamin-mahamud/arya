@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  api:
+    container_name: ARYA_API
+    build: ./api
+    env_file:
+      - "./api/.env"
+    ports:
+      - "8010:80"
+    volumes:
+      - api:/api
+  #web:
+  #admin:
+  #redis:
+  #postgres:
+  #elasticsearch:
+
+volumes:
+  api:
