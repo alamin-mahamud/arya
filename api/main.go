@@ -1,13 +1,11 @@
 package main
 
 import (
+	"log"
 	"net/http"
-	"strconv"
 
 	"github.com/alamin-mahamud/arya/api/pkg"
 )
-
-const port = "8080"
 
 func main() {
 	config, err := pkg.LoadConfig("./config")
@@ -17,5 +15,5 @@ func main() {
 
 	r := pkg.NewRouter()
 	http.Handle("/", r)
-	http.ListenAndServe(":"+strconv.Itoa(config.ServerPort), nil)
+	log.Fatal(http.ListenAndServe(config.Server.Port, nil))
 }

@@ -10,7 +10,7 @@ import (
 )
 
 func TestMain(t *testing.T) {
-	r := httptest.NewRequest("GET", "http://localhost"+":"+port+"/ping", nil)
+	r := httptest.NewRequest("GET", "http://localhost"+":8080"+"/ping", nil)
 	w := httptest.NewRecorder()
 	pkg.Ping(w, r)
 	resp := w.Result()
