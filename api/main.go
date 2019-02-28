@@ -1,17 +1,15 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
+
+	"github.com/alamin-mahamud/arya/api/pkg"
 )
 
 const port = "8080"
 
 func main() {
-	http.HandleFunc("/", simple)
+	r := pkg.NewRouter()
+	http.Handle("/", r)
 	http.ListenAndServe(":"+port, nil)
-}
-
-func simple(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello World")
 }

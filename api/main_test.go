@@ -5,13 +5,14 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/alamin-mahamud/arya/api/pkg"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(t *testing.T) {
-	r := httptest.NewRequest("GET", "http://localhost"+":"+port, nil)
+	r := httptest.NewRequest("GET", "http://localhost"+":"+port+"/ping", nil)
 	w := httptest.NewRecorder()
-	simple(w, r)
+	pkg.Ping(w, r)
 	resp := w.Result()
 	body, _ := ioutil.ReadAll(resp.Body)
 
