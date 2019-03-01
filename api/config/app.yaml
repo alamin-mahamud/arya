@@ -1,7 +1,8 @@
 database:
   log_queries: true
   timeout_seconds: 20
-  dsn: postgres://postgres:postgres@postgres
+  # dsn: postgres://postgresUser:postgresPassword@postgresHost:postgresPort/postgresDatabaseName
+  dsn: "postgres://postgres:postgres@POSTGRESQL_AWESOME:5432/arya_auth?sslmode=disable"
 
 server:
   port: :8080
