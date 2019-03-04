@@ -1,0 +1,77 @@
+hash: be142d8e16e05780bbef058d1a7a89fd40b3a03418a46f62ab1df6d876748c4a
+updated: 2019-03-03T16:58:04.915762292+06:00
+imports:
+- name: github.com/fsnotify/fsnotify
+  version: ccc981bf80385c528a65fbfdd49bf2d8da22aa23
+- name: github.com/go-pg/pg
+  version: 08ff5251d5dfbf82f723f876aed1531a14cb1eaf
+  subpackages:
+  - internal
+  - internal/parser
+  - internal/pool
+  - orm
+  - types
+- name: github.com/gorilla/mux
+  version: a7962380ca08b5a188038c69871b8d3fbdf31e89
+- name: github.com/hashicorp/hcl
+  version: 65a6292f0157eff210d03ed1bf6c59b190b8b906
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/printer
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- name: github.com/jinzhu/inflection
+  version: 04140366298a54a039076d798123ffa108fff46c
+- name: github.com/lib/pq
+  version: 4ded0e9383f75c197b3a2aaa6d590ac52df6fd79
+  subpackages:
+  - oid
+- name: github.com/magiconair/properties
+  version: 7757cc9fdb852f7579b24170bcacda2c7471bb6a
+- name: github.com/mitchellh/mapstructure
+  version: 3536a929edddb9a5b34bd6861dc4a9647cb459fe
+- name: github.com/nbutton23/zxcvbn-go
+  version: eafdab6b0663b4b528c35975c8b0e78be6e25261
+- name: github.com/pelletier/go-toml
+  version: d9a27b8052b61ed9ff043993c141af2acfb50027
+- name: github.com/spf13/afero
+  version: f4711e4db9e9a1d3887343acb72b2bbfc2f686f5
+  subpackages:
+  - mem
+- name: github.com/spf13/cast
+  version: 8c9545af88b134710ab1cd196795e7f2388358d7
+- name: github.com/spf13/jwalterweatherman
+  version: 94f6ae3ed3bceceafa716478c5fbf8d29ca601a1
+- name: github.com/spf13/pflag
+  version: 24fa6976df40757dce6aea913e7b81ade90530e1
+- name: github.com/spf13/viper
+  version: 6d33b5a963d922d182c91e8a1c88d81fd150cfd4
+- name: golang.org/x/sys
+  version: b4a75ba826a64a70990f11a225237acd6ef35c9f
+  subpackages:
+  - unix
+- name: golang.org/x/text
+  version: d14c52b222ee852cdba8b07206ca0c614b389876
+  subpackages:
+  - transform
+  - unicode/norm
+- name: gopkg.in/yaml.v2
+  version: 51d6538a90f86fe93ac480b35f37b2be17fef232
+testImports:
+- name: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 5d4384ee4fb2527b0a1256a821ebfc92f91efefc
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: ffdc059bfe9ce6a4e144ba849dbedead332c6053
+  subpackages:
+  - assert
