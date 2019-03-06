@@ -1,15 +1,15 @@
-version: '3'
+version: "3"
 
 services:
-  api:
-    container_name: ARYA_API
-    build: ./api
+  auth:
+    container_name: ARYA_AUTH
+    build: ./auth
     env_file:
-      - "./api/.env"
+      - "./auth/.env"
     ports:
       - "8010:80"
     volumes:
-      - api:/api
+      - auth:./auth
   #web:
   #admin:
   #redis:
@@ -17,4 +17,4 @@ services:
   #elasticsearch:
 
 volumes:
-  api:
+  auth:
